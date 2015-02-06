@@ -19,11 +19,26 @@
         
     }];
 }
+- (void)loginViewFetchedUserInfo:(FBLoginView *)loginView user:(id<FBGraphUser>)user{
+    self.fbProfilePictureView.profileID = user.objectID;
+}
+-(void)loginView:(FBLoginView *)loginView handleError:(NSError *)error{
+    
+}
+
+- (void)loginViewShowingLoggedInUser:(FBLoginView *)loginView{
+    
+}
+
+- (void)loginViewShowingLoggedOutUser:(FBLoginView *)loginView{
+    
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.fbLoginView.readPermissions = @[@"email"];
 }
 
 - (void)didReceiveMemoryWarning

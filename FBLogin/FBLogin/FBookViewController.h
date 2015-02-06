@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FBookViewController : UIViewController
+@interface FBookViewController : UIViewController<FBLoginViewDelegate>
+
+@property (strong, nonatomic) IBOutlet FBLoginView *fbLoginView;
+
+@property (strong, nonatomic) IBOutlet FBProfilePictureView *fbProfilePictureView;
 
 @end
