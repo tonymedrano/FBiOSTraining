@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FBookTableViewController.h"
+#import "FBookViewController.h"
 
 @interface FBookAppDelegate : UIResponder <UIApplicationDelegate>
 

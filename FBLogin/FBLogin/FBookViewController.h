@@ -11,6 +11,7 @@
 @interface FBookViewController : UIViewController<FBLoginViewDelegate>
 
 @property (strong, nonatomic) IBOutlet FBLoginView *fbLoginView;
+@property (strong, nonatomic) IBOutlet UIButton *friendScreen;
 
 @property (strong, nonatomic) IBOutlet FBProfilePictureView *fbProfilePictureView;
 

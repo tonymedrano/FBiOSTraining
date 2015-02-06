@@ -27,11 +27,12 @@
 }
 
 - (void)loginViewShowingLoggedInUser:(FBLoginView *)loginView{
-    
+    self.navigationController.navigationBarHidden  =NO;
 }
 
 - (void)loginViewShowingLoggedOutUser:(FBLoginView *)loginView{
-    
+    self.navigationController.navigationBarHidden  = YES;
+    self.fbProfilePictureView.profileID = nil;
 }
 
 - (void)viewDidLoad

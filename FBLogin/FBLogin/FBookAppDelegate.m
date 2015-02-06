@@ -19,7 +19,23 @@
     [FBSession class];
     [FBLoginView class];
     [FBProfilePictureView class];
+    [self openSession];
     return YES;
+}
+
+- (void)openSession
+{
+    [FBSession openActiveSessionWithReadPermissions:nil
+                                       allowLoginUI:YES
+                                  completionHandler:
+     ^(FBSession *session,
+       FBSessionState state, NSError *error) {
+         [[FBRequest requestForMe] startWithCompletionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
+             if(error==nil){
+                 [User currentUser].currentFBUser = result;
+             }
+         }];
+     }];
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

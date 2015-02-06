@@ -28,6 +28,12 @@
 		386D09F11A852139006B5605 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 386D09F01A852139006B5605 /* libsqlite3.dylib */; };
 		386D09F31A852141006B5605 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 386D09F21A852141006B5605 /* Security.framework */; };
 		386D09F51A8524D0006B5605 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 386D09F41A8524D0006B5605 /* Social.framework */; };
+		386D09F81A855147006B5605 /* FBookTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 386D09F71A855147006B5605 /* FBookTableViewController.m */; };
+		386D09F91A855147006B5605 /* FBookTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 386D09F71A855147006B5605 /* FBookTableViewController.m */; };
+		386D0A071A85646D006B5605 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 386D0A061A85646D006B5605 /* User.m */; };
+		386D0A081A85646D006B5605 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 386D0A061A85646D006B5605 /* User.m */; };
+		386D0A241A857967006B5605 /* defaultpic.png in Resources */ = {isa = PBXBuildFile; fileRef = 386D0A231A857967006B5605 /* defaultpic.png */; };
+		386D0A251A857967006B5605 /* defaultpic.png in Resources */ = {isa = PBXBuildFile; fileRef = 386D0A231A857967006B5605 /* defaultpic.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +73,11 @@
 		386D09F01A852139006B5605 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		386D09F21A852141006B5605 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		386D09F41A8524D0006B5605 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		386D09F61A855147006B5605 /* FBookTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBookTableViewController.h; sourceTree = "<group>"; };
+		386D09F71A855147006B5605 /* FBookTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBookTableViewController.m; sourceTree = "<group>"; };
+		386D0A051A85646D006B5605 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		386D0A061A85646D006B5605 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		386D0A231A857967006B5605 /* defaultpic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultpic.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +113,7 @@
 		386D09A61A8520C9006B5605 = {
 			isa = PBXGroup;
 			children = (
+				386D0A041A85644B006B5605 /* User */,
 				386D09B81A8520CA006B5605 /* FBLogin */,
 				386D09DA1A8520CA006B5605 /* FBLoginTests */,
 				386D09B11A8520CA006B5605 /* Frameworks */,
@@ -138,6 +150,8 @@
 		386D09B81A8520CA006B5605 /* FBLogin */ = {
 			isa = PBXGroup;
 			children = (
+				386D09F61A855147006B5605 /* FBookTableViewController.h */,
+				386D09F71A855147006B5605 /* FBookTableViewController.m */,
 				386D09C11A8520CA006B5605 /* FBookAppDelegate.h */,
 				386D09C21A8520CA006B5605 /* FBookAppDelegate.m */,
 				386D09C41A8520CA006B5605 /* Main_iPhone.storyboard */,
@@ -153,6 +167,7 @@
 		386D09B91A8520CA006B5605 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				386D0A231A857967006B5605 /* defaultpic.png */,
 				386D09BA1A8520CA006B5605 /* FBLogin-Info.plist */,
 				386D09BB1A8520CA006B5605 /* InfoPlist.strings */,
 				386D09BE1A8520CA006B5605 /* main.m */,
@@ -177,6 +192,15 @@
 				386D09DD1A8520CA006B5605 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		386D0A041A85644B006B5605 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				386D0A051A85646D006B5605 /* User.h */,
+				386D0A061A85646D006B5605 /* User.m */,
+			);
+			name = User;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				386D09C91A8520CA006B5605 /* Main_iPad.storyboard in Resources */,
+				386D0A241A857967006B5605 /* defaultpic.png in Resources */,
 				386D09CE1A8520CA006B5605 /* Images.xcassets in Resources */,
 				386D09C61A8520CA006B5605 /* Main_iPhone.storyboard in Resources */,
 				386D09BD1A8520CA006B5605 /* InfoPlist.strings in Resources */,
@@ -267,6 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				386D0A251A857967006B5605 /* defaultpic.png in Resources */,
 				386D09DF1A8520CA006B5605 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,7 +304,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				386D0A071A85646D006B5605 /* User.m in Sources */,
 				386D09CC1A8520CA006B5605 /* FBookViewController.m in Sources */,
+				386D09F81A855147006B5605 /* FBookTableViewController.m in Sources */,
 				386D09C31A8520CA006B5605 /* FBookAppDelegate.m in Sources */,
 				386D09BF1A8520CA006B5605 /* main.m in Sources */,
 			);
@@ -289,6 +317,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				386D09E11A8520CA006B5605 /* FBLoginTests.m in Sources */,
+				386D09F91A855147006B5605 /* FBookTableViewController.m in Sources */,
+				386D0A081A85646D006B5605 /* User.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +533,7 @@
 				386D09E61A8520CA006B5605 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		386D09E71A8520CA006B5605 /* Build configuration list for PBXNativeTarget "FBLoginTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +542,7 @@
 				386D09E91A8520CA006B5605 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
